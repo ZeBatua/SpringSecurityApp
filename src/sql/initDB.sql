@@ -4,6 +4,10 @@ CREATE TABLE Person (
     year_of_birth int NOT NULL,
     password varchar NOT NULL
 );
+--
+-- INSERT INTO Person (username, year_of_birth, password) VALUES ('test1', 1991, 'password1');
+-- INSERT INTO Person (username, year_of_birth, password) VALUES ('test2', 1992, 'password2');
+-- INSERT INTO Person (username, year_of_birth, password) VALUES ('test3', 1993, 'password3');
+-- INSERT INTO Person (username, year_of_birth, password) VALUES ('test4', 1994, 'password4');
+-- INSERT INTO Person (username, year_of_birth, password) VALUES ('test5', 1995, 'password5');
 
-INSERT INTO Person (username, year_of_birth, password) VALUES ('test1', 1991, 'test_password123');
-INSERT INTO Person (username, year_of_birth, password) VALUES ('test2', 1992, 'test_password123');
