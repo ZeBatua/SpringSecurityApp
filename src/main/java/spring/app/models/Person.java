@@ -12,20 +12,21 @@ public class Person {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    private int id;
 
     @NotEmpty(message = "Имя не может быть пустым")
     @Size(message = "Имя должно содержать как минимум 2 символа")
     @Column(name = "username")
-    String username;
+    private String username;
 
     @Min(value = 1900, message = "Год должен быть больше 1900")
     @Column(name = "year_of_birth")
-    int yearOfBirth;
+    private int yearOfBirth;
 
     @NotEmpty(message = "Пароль не может быть пустым")
     @Column(name = "password")
-    String password;
+    private String password;
+    
 
     public Person() {
     }
