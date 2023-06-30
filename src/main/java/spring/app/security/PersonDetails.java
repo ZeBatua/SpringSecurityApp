@@ -1,10 +1,12 @@
 package spring.app.security;
 
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.GrantedAuthority;
 import spring.app.models.Person;
 
 import java.util.Collection;
+import java.util.Collections;
 
 
 /**
@@ -22,7 +24,7 @@ public class PersonDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null; // Method for getting user roles
+        return Collections.singletonList(new SimpleGrantedAuthority(person.getRole()));
     }
 
     @Override
